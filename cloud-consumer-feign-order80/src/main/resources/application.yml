@@ -1,0 +1,18 @@
+#端口号
+server:
+  port: 70
+#服务名称
+spring:
+  application:
+    name: cloud-feign-order-service
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
+ribbon:
+  #服务连接的最长时间
+  ConnectTimeout: 5000
+  #服务连接后返回结果的最长时间
+  ReadTimeout:  5000
